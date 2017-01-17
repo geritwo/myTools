@@ -1,0 +1,53 @@
+<!-- This is the good checkbox. -->
+
+<html>
+  <head>
+    <title>Checkbox custimization</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background: #f7f7f7;
+      }
+
+      :root input[type=checkbox] {
+        position: absolute;
+        left: -1000em;
+      }
+
+      label {
+        border: 1px dotted silver;
+        padding: 4px;
+      }
+
+      input[type=checkbox] + span {
+        background: yellow;
+        display: inline-block;
+        vertical-align: middle;
+        width: 36px;
+        height: 44px;
+        background: url('./icons.png') 0px center no-repeat;
+
+        background-position: 0px -57px;
+      }
+
+      input[type=checkbox]:checked + span {
+        background: yellow;
+        display: inline-block;
+        vertical-align: middle;
+        width: 36px;
+        height: 44px;
+        background: url('./icons.png') 0px center no-repeat;
+
+        background-position: 0px 0px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <label for="todo-item">
+      Are you in?
+      <input type="checkbox" id="todo-item" name="first"></input>
+      <span></span>
+    </label>
+  </body>
+</html>
