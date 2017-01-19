@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>*** Angular JS Boilerplate ***</title>
+    <meta charset="utf-8">
+    <script src="./lib/angular.min.js"></script>
+    <script src="./lib/angular.route.min.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" style="text/css" href="./assets/boiler_style.css">
+  </head>
+  <body ng-app="app">
+    <header ng-include="'./templates/nav.html'"></header>
+    <main ng-view></main>
+    <footer ng-include="'./templates/footer.html'"></main>
+  </body>
+</html>
