@@ -13,15 +13,14 @@ function initData() {
   };
 };
 
-
 // Callback: Process data however you need to
 function callback(data) {
-    
+
 
 // E.g. display (render with vanulla JS)
   data.forEach( function(e) {
       var name = e.data.name;
-      
+
       // Render
       var nameElement = document.createElement('li');
       nameElement.innerText = name;
