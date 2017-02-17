@@ -11,7 +11,7 @@ var detailedRequest = fs.readFileSync('./bookstorequeries.sql').toString();
 var con = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'm2st3r',
+  password: '',
   database: 'bookstore'
 });
 
